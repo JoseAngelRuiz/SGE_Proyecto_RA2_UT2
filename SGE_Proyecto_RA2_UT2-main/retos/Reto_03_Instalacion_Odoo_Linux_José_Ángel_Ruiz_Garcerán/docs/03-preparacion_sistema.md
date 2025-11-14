@@ -1,11 +1,13 @@
 # 03 — Preparación del sistema
 
-1. Actualiza índices y paquetes:
-   ```bash
-   sudo apt update && sudo apt -y upgrade
-   ```
-   ![Update/Upgrade](../assets/img/03-preparacion_sistema/paso01_update-upgrade.png "Update/Upgrade")
+* Actualiza índices y paquetes:
+  ![](../assets/img/03-preparacion_sistema/update.png)
+  Empezamos utilizando un sudo su para entrar en el modo administrador, y luego haremos un update
 
-2. Configura zona horaria e idioma si procede.
+  ![](../assets/img/03-preparacion_sistema/ugrade.png)
 
-> Resultado esperado: sistema actualizado y listo para instalar dependencias.
+Despues continuaremos haciendo un upgrade.
+
+Para configurar la zona horaria se utilizara este comando:
+
+timedatectl set-timezone "Zona Horaria"
